@@ -17,6 +17,7 @@ public class Main {
         p4.setNom("tomate");
         p4.setPrix(0);
 
+
          System.out.println(p3);
          p1.afficerProduits();
          p2.afficerProduits();
@@ -28,6 +29,23 @@ public class Main {
         System.out.println(p1);
         p4.setPrix(700);
         System.out.println(p4);
+        Magasin magasin1 = new Magasin(3333,"sdff",5);
+        magasin1.afficherMagasin();
+        magasin1.ajouterProduit(p1);
+        magasin1.ajouterProduit(p2);
+        magasin1.afficherMagasin();
+        GestionMagasin Gestion=new GestionMagasin();
+        Gestion.comparer(p2);
+        Gestion.comparer2Produits(p2,p4);
+        Gestion.ajouter(p1);
+        Gestion.ajouter(p2);
+        Gestion.ajouter(p3);
+        Gestion.ajouter(p4);
+        Gestion.supprimer(p1);
+        magasin1.afficherMagasin();
+
+
+
 
 
 
